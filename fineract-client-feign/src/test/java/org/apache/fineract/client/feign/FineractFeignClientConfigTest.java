@@ -38,7 +38,7 @@ class FineractFeignClientConfigTest {
     void testBuilderConfiguration() {
         String baseUrl = "http://example.com:8080";
         String username = "testuser";
-        String password = "testpass";
+        String ***REMOVED***;
         int connectTimeoutSeconds = 10;
         int readTimeoutSeconds = 30;
 
