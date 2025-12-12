@@ -255,7 +255,7 @@ public class UserAdministrationTest extends IntegrationTest {
     public void testApplicationUserShallNotBeAbleToChangeItsOwnRoles() {
         // Admin creates a new user with one role assigned
         Integer roleId = RolesHelper.createRole(requestSpec, responseSpec);
-        String ***REMOVED***;
+        String password = "QwE!5rTy#9uP0";
         String simpleUsername = Utils.uniqueRandomStringGenerator("NotificationUser", 4);
         GetOfficesResponse headOffice = OfficeHelper.getHeadOffice(requestSpec, responseSpec);
         PostUsersRequest createUserRequest = new PostUsersRequest().username(simpleUsername)

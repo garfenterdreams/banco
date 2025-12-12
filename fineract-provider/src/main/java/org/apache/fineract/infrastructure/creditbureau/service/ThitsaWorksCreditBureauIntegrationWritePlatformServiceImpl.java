@@ -111,7 +111,7 @@ public class ThitsaWorksCreditBureauIntegrationWritePlatformServiceImpl implemen
                     builder -> builder.header(CONTENT_TYPE, APPLICATION_FORM_URLENCODED).get().build());
             case "token" -> request = createRequest(baseRequestBuilder,
                     () -> RequestBody.create("" + "BODY=x-www-form-urlencoded&\r" + "grant_type=password&\r" + "userName=" + userName
-                            + "&\r" + "***REMOVED***&\r", MediaType.parse("application/x-www-form-urlencoded")),
+                            + "&\r" + "password=" + password + "&\r", MediaType.parse("application/x-www-form-urlencoded")),
                     (requestBody, builder) -> builder.header(CONTENT_TYPE, APPLICATION_FORM_URLENCODED).post(requestBody).build());
             case "NRC" -> request = createRequest(baseRequestBuilder,
                     () -> RequestBody.create("BODY=x-www-form-urlencoded&nrc=" + nrcId + "&",
