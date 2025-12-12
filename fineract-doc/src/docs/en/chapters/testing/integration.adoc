@@ -596,7 +596,7 @@ mysql -u root -pmysql fineract_default -e \
 
 # Reset credentials if needed
 mysql -u root -pmysql fineract_default -e \
-  "UPDATE m_appuser SET password = '5jdQ3dNQXHPzCuBbZVdQZ2XnVlPc3l2l' \
+  "UPDATE m_appuser SET ***REMOVED*** \
    WHERE username = 'mifos';"
 
 # Verify connection settings
